@@ -18,5 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['namespace'=>'vk','prefix'=>'vk'], function (){
-   Route::post('/','VkApiController@confirmCode');
+   Route::post('/','VkApiController@postRequest');
 });
